@@ -1,0 +1,18 @@
+﻿<div class="card" style="width: 18rem; margin:10px;">
+    @if (!string.IsNullOrEmpty(ImageUrl))
+    {
+        <img src="@ImageUrl" class="card-img-top" alt="@Title" />
+    }
+    <div class="card-body">
+        <h5 class="card-title">@Title</h5>
+        <p class="card-text">@Description</p>
+        <a href="@ProjectLink" class="btn btn-primary" target="_blank">View Project</a>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public string? Description { get; set; }
+    [Parameter] public string? ImageUrl { get; set; }
+    [Parameter] public string? ProjectLink { get; set; }
+}

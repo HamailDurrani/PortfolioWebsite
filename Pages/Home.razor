@@ -1,0 +1,37 @@
+﻿@using PortfolioWebsite.Components
+
+@page "/"
+
+<div class="hero-section text-center py-5">
+    <img src="images/pic1.jpg" alt="Profile Picture" class="rounded-circle shadow mb-3" 
+         style="width: 180px; height: 180px; object-fit: cover;">
+
+    <h1 class="fw-bold mt-3">Hi, I'm Hamail Durrani</h1>
+    <h4 class="text-muted mb-4">Software Engineer | Web Developer | .Net Developer</h4>
+
+    <p class="lead mb-4">
+        I love creating modern and interactive web applications with clean code and beautiful UI.  
+        Explore my work below!
+    </p>
+
+    <div>
+        <a href="/projects" class="btn btn-primary me-2">My Projects</a>
+        <a href="/about" class="btn btn-outline-primary">About Me</a>
+    </div>
+</div>
+
+<hr class="my-5" />
+
+<div class="container text-center">
+    <h2 class="mb-4">Recent Projects</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <ProjectCard Title="Speedo-mile" Description="Web app for Lahore Speedo bus routes"
+                ImageUrl="images/speedo.png" ProjectLink="https://github.com/hamaildurrani/speedo-mile" />
+        </div>
+        <div class="col-md-5 mb-4">
+            <ProjectCard Title="Expense Tracker" Description="Calculate daily expense"
+                ImageUrl="images/expense.png" ProjectLink="https://github.com/yourgithub/jobportal" />
+        </div>
+    </div>
+</div>
